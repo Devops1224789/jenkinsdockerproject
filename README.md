@@ -20,7 +20,7 @@ docker image push mydevopsuser46/$JOB_NAME:latest
 docker image rmi $JOB_NAME:v1.$BUILD_ID mydevopsuser46/$JOB_NAME:v1.$BUILD_ID mydevopsuser46/$JOB_NAME:latest
 
 
-step 3 : run the play book 
+step 3 : run the play book playbook.ynml
 
 ---
 - name: This will create container in docker-webserver node
