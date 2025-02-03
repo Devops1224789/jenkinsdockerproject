@@ -22,7 +22,7 @@ docker image rmi $JOB_NAME:v1.$BUILD_ID mydevopsuser46/$JOB_NAME:v1.$BUILD_ID my
 
 step 3 : run the play book playbook.ynml
 
----
+''''---
 - name: This will create container in docker-webserver node
   hosts: all
   become: true
@@ -36,7 +36,7 @@ step 3 : run the play book playbook.ynml
     - name: run docker conatiner run docker run
       shell: docker container run -itd --name mydevopsuser46-jenkinsdockerproject -p 9000:80 mydevopsuser46/jenkinsdockerproject:latest
 
-
+  ````
 ![image](https://github.com/user-attachments/assets/c005fbf4-8fcf-4c33-89a6-b523fee796c1)
 
 
